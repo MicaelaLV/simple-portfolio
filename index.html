@@ -6,12 +6,11 @@
     <meta name="description" content="front-end web developer portfolio, Micaela Linda Villani" />
     <meta name="keywords" content="front-end, developer, portfolio, junior, web developer, javascript"/>
     <title>MLV Portfolio</title>
-    
-    <!--fonts-->
+    <!-- fonts -->
     <link rel="shortcut icon" href="../favicon.ico">
+    <!-- links -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
-    
-
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js"></script>
   </head>
@@ -25,7 +24,7 @@
       <!-- footer menu -->
       <div class="st-container">
         <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-        <a href="#st-panel-1">Home</a>
+        <a href="#st-panel-1">Hello</a>
         <input type="radio" name="radio-set" id="st-control-2"/>
         <a href="#st-panel-2">About me</a>
         <input type="radio" name="radio-set" id="st-control-3"/>
@@ -33,14 +32,24 @@
         <input type="radio" name="radio-set" id="st-control-4"/>
         <a href="#st-panel-4">CV</a>
         <input type="radio" name="radio-set" id="st-control-5"/>
-        <a href="#st-panel-5">Get in touch!</a>
+        <a href="#st-panel-5">Get in touch</a>
         <div class="st-scroll">
           <section class="st-panel" id="st-panel-1">
-            <div class="st-deco">
+            <!-- disactivate triangle on top of the page
+              <div class="st-deco">
               <i class="material-icons"></i>
-            </div>
-            <h2>Micaela Villani</h2>
-            <p>Web Developer, Animation Lover, Learner, Music Addict</p>
+            </div> -->
+            <h2 class="type-animation">Hello!</h2>
+            <p> <span class="presentation">I'm <span class="name">Micaela</span>,</span> <br/>
+              <span class="first-row">
+                <i class="em em-8ball"></i>
+                Front-end Web Developer
+                <i class="em em-female-astronaut"></i>
+              </span> 
+                <br/>
+              Animation Lover <i class="em em-sparkling_heart"></i>| 
+              Learner <i class="em em-book"></i>| 
+              Music Addict <i class="em em-notes"></i></p>
           </section>
           <section class="st-panel st-color" id="st-panel-2">
             <div class="st-deco" data-icon="2"></div>
@@ -65,5 +74,6 @@
         </div><!-- // st-scroll // single pages -->
       </div><!-- // st-container // footer menu -->
     </div><!-- // page container -->
+    <script src="particles.js"></script>
   </body>
 </html>
