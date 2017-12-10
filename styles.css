@@ -1,41 +1,3 @@
-/**UPLOAD ICON & FONT SET**/
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
 /**HIDDEN OVERFLOW TO PERMIT TO ANIMATE THE PANEL WRAPPER**/
 body {
 	overflow: hidden;
@@ -87,7 +49,7 @@ body {
 	z-index: 10;
 	font-weight: 700;
 	background: #fff;
-	color: #000;
+	color: #00AAFF;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
@@ -127,7 +89,7 @@ body {
 /**GIVING THE SIBLING LINK OF THE ONE LINKED A DIFFERENT BACKGROUND COLOR**/
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #000;
+	background: #2EF9A0;
 	color: #fff;
 }
 
@@ -141,7 +103,7 @@ body {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #000;
+	border-bottom-color: #2EF9A0;
 	border-width: 10px;
 	left: 53%;
 	margin-left: -20px;
@@ -150,6 +112,7 @@ body {
 /**DEFINED AN HOVER STATE FOR THE LINK ELEMENT**/
 .st-container > input:hover + a{
 	background: #16E6CC;
+	color: #fff;
 }
 
 .st-container > input:hover + a:after {
@@ -230,7 +193,7 @@ body {
 	top: 0px;
 	left: 51%;
 	margin-left: -40px;
-	background: #000;
+	background: #fff;
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	-moz-transform: translateY(-50%) rotate(45deg);
 	-o-transform: translateY(-50%) rotate(45deg);
@@ -242,7 +205,7 @@ body {
 /**MOVING THE HEADER UP IN THE PAGE**/
 .st-panel h2 {
 	color: #000;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
 	position: absolute;
 	font-size: 54px;
 	font-weight: 900;
@@ -367,12 +330,26 @@ body {
 	line-height: 22px;
 	z-index: 2;
 	padding: 0;
-	width: 50%;
-	left: 25%;
+	width: 60%;
+	left: 20%;
 	top: 1%;
 	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
+
+.social-links-container {
+	position: absolute;
+	left: 43.5%;
+	top: 63%;
+}
+
+a.social-logo {
+	margin: 10px;
+	cursor: pointer !important;
+	z-index: 5;
+}
+
+
 /**ANIMATING THE PARAGRAPH TO MOVE UP**/
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
 #st-control-2:checked ~ .st-scroll #st-panel-2 p,
@@ -483,67 +460,103 @@ body {
 	font-size: 10rem;
 	color: #fff;
 	text-transform: capitalize;
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
 }
 
-/**personal file style**/
+/**skills style**/
 .em {
 	height: 20px;
 	margin-bottom: 5px;
 }
 #st-panel-2 {
-	background: url('https://static.pexels.com/photos/214573/pexels-photo-214573.jpeg') no-repeat center center;
+	background-color: #02C4E7;
 	background-size: cover;
 }
 #st-panel-2 p {
 	color: #fff;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 300;
 	text-transform: capitalize;
-		}
+	top: 45%;
+}
 #st-panel-2 h2 {
-	font-size: 80px;
-	color: #000;
+	font-size: 6rem;
+	color: #67FF6C;
   font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+	top: 50%;
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
+}
+
+/* portfolio */
+#st-panel-3 {
+	background-color: #2EF9A0;
+	background-size: cover;
+}
+
+#st-panel-3 p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: capitalize;
+	top: 45%;
+}
+
+#st-panel-3 h2 {
+	font-size: 6rem;
+	color: #F5FE0D;
+  font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	top: 50%;
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
 }
 
 /**passions style**/
 #st-panel-4 {
-	background: url('https://static.pexels.com/photos/70222/pexels-photo-70222.jpeg') no-repeat center center;
+	background-color: #F9951F;
 	background-size: cover;
 }
 #st-panel-4 p {
 	color: #fff;
 	font-size: 20px;
+	font-weight: 300;
+	text-transform: capitalize;
+	top: 45%;
 	}
 #st-panel-4 h2 {
-	font-size: 80px;
-	color: #000;
+	font-size: 6rem;
+	color: #F5FE0D;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	top: 50%;
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
 }
 
 /**contacts style**/
 #st-panel-5 {
-	background: url('https://static.pexels.com/photos/9165/hand-top-white-old.jpg') no-repeat center center;
+	background-color: #C501E1;
 	background-size: cover;
 }
 #st-panel-5 p {
-	color: #2E3449;
+	color: #fff;
 	font-size: 20px;
+	font-weight: 300;
+	text-transform: capitalize;
+	top: 45%;
 	}
 #st-panel-5 h2 {
-	font-size: 80px;
-	color: #2E3449;
-	font-family: 'Lato', cursive;
-	text-transform: capitalize;
+	font-size: 6rem;
+	color: #FF6A60;
+  font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	top: 50%;
+	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
 }
 
 
 .st-color,
 .st-deco{
-	background: #000;
+	background: #fff;
 }
 .st-color [.material-icons]:after {
 	color: #000;
