@@ -443,6 +443,11 @@ a.social-logo {
 	color: #fff;
 	text-transform: capitalize;
 	text-shadow: 1px 1px 1px RGBA(65, 64, 72, .2);
+	top: 40%;
+}
+
+.my-icon {
+	height: 200px;
 }
 
 /**skills style**/
